@@ -47,7 +47,10 @@ Here, Vis represents the visible image folder and Ir represents the correspondin
 After this, add the dataset to the list of accepted datasets in finetune_instruct_pix2pix.py (line 855 onwards). Please follow the existing examples and add an additional conditional statement to add your dataset.
 
 ## Checkpoint Preparation
-
+clone the Grounded SAM folder from IDEA-Research
+```
+git clone https://github.com/IDEA-Research/Grounded-Segment-Anything.git
+```
 Download these checkpoints and paste them in the Grounded-Segment-Anything folder
 
 1) [RAM](https://huggingface.co/spaces/xinyu1205/Recognize_Anything-Tag2Text/blob/main/ram_swin_large_14m.pth)
