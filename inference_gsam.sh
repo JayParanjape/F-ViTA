@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=1 python inference_gsam.py '/mnt/store/jparanj1/instruction-tuned-sd/checkpoints/litiv-finetuned-gsam-masks/checkpoint-3000' '/mnt/store/jparanj1/instruction-tuned-sd/predictions/litiv_FVITA_checkpoint-3000_on_litiv_mwir_SEQ7' 'litiv'
