@@ -1,0 +1,309 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script> 
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+	body {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		font-weight:300;
+		font-size:18px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1100px;
+        text-align: justify;
+	}
+	
+	h1 {
+		font-size:32px;
+		font-weight:300;
+	}
+	
+	.disclaimerbox {
+		background-color: #eee;		
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+		padding: 20px;
+	}
+
+	video.header-vid {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.header-img {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.rounded {
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	a:link,a:visited
+	{
+		color: #1367a7;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #208799;
+	}
+	
+	td.dl-link {
+		height: 160px;
+		text-align: center;
+		font-size: 22px;
+	}
+	
+	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		5px 5px 0 0px #fff, /* The second layer */
+		5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		10px 10px 0 0px #fff, /* The third layer */
+		10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+		15px 15px 0 0px #fff, /* The fourth layer */
+		15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+		20px 20px 0 0px #fff, /* The fifth layer */
+		20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+		25px 25px 0 0px #fff, /* The fifth layer */
+		25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+	.paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35); /* The top layer shadow */
+
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+
+	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		5px 5px 0 0px #fff, /* The second layer */
+		5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		10px 10px 0 0px #fff, /* The third layer */
+		10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+		margin-top: 5px;
+		margin-left: 10px;
+		margin-right: 30px;
+		margin-bottom: 5px;
+	}
+	
+	.vert-cent {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	hr
+	{
+		border: 0;
+		height: 1px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	}
+</style>
+
+<html>
+<head>
+	<title>F-ViTA: Foundation Model Guided Visible to Thermal Translation</title>
+	<meta property="og:image" content="Path to my teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
+	<meta property="og:title" content="F-ViTA: Foundation Model Guided Visible to Thermal Translation" />
+	<meta property="og:description" content="F-ViTA: Foundation Model Guided Visible to Thermal Translation" />
+
+	<!-- Get from Google Analytics -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src=""></script> 
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-75863369-6');
+	</script>
+</head>
+
+<body>
+	<br>
+	<center>
+		<span style="font-size:36px">F-ViTA: Foundation Model Guided Visible to Thermal Translation</span>
+		<table align=center width=600px>
+			<table align=center width=800px>
+				<tr>
+					<td align=center colspan="2">
+						<center>
+							<span style="font-size:24px"><a href="https://scholar.google.com/citations?user=BcBltw8AAAAJ&hl=en">Jay N. Paranjape</a></span>
+						</center>
+					</td>
+                    <td align=center colspan="2">
+						<center>
+							<span style="font-size:24px"><a href="https://scholar.google.com/citations?user=3ftbE9oAAAAJ&hl=en">Celso de Melo</a></span>
+						</center>
+					</td>
+                    <td align=center colspan="2">
+						<center>
+							<span style="font-size:24px"><a href="https://scholar.google.com/citations?user=AkEXTbIAAAAJ&hl=en">Vishal M. Patel</a></span>
+						</center>
+					</td>
+				</tr>
+                <tr>
+					<td align=center colspan="10">
+						<center>
+							<span style="font-size:24px"><a href="">Johns Hopkins University</a></span>
+						</center>
+					</td>
+                </tr>
+			</table>
+			<table align=center width=250px>
+				<tr>
+					<td align=center width=120px>
+						<center>
+							<span style="font-size:24px"><a href='TBF'>[Paper]</a></span>
+						</center>
+					</td>
+					<td align=center width=120px>
+						<center>
+							<span style="font-size:24px"><a href='https://github.com/JayParanjape/F-ViTA/tree/master'>[GitHub]</a></span><br>
+						</center>
+					</td>
+				</tr>
+			</table>
+		</table>
+	</center>
+
+	<center>
+		<table align=center width=850px>
+			<tr>
+				<td width=260px>
+					<center>
+						<img class="round" style="width:850px" src="./resources/intro_fig.png"/>
+					</center>
+				</td>
+			</tr>
+		</table>
+		<hr>
+
+	<table align=center width=850px>
+		<center><h1>Abstract</h1></center>
+		<tr>
+			<td align="justify">
+                Thermal imaging is crucial for scene understanding, particularly in low-light and nighttime conditions. However, collecting large thermal datasets is costly and labor-intensive due to the specialized equipment required for infrared image capture. To address this challenge, researchers have explored visible-to-thermal image translation. Most existing methods rely on Generative Adversarial Networks (GANs) or Diffusion Models (DMs), treating the task as a style transfer problem. As a result, these approaches attempt to learn both the modality distribution shift and underlying physical principles from limited training data.  In this paper, we propose F-ViTA, a novel approach that leverages the general world knowledge embedded in foundation models to guide the diffusion process for improved translation. Specifically, we condition an InstructPix2Pix Diffusion Model with zero-shot masks and labels from foundation models such as SAM and Grounded DINO. This allows the model to learn meaningful correlations between scene objects and their thermal signatures in infrared imagery. Extensive experiments on five public datasets demonstrate that F-ViTA outperforms state-of-the-art (SOTA) methods. Furthermore, our model generalizes well to out-of-distribution (OOD) scenarios and can generate Long-Wave Infrared (LWIR), Mid-Wave Infrared (MWIR), and Near-Infrared (NIR) translations from the same visible image. Code will be released post-review.			</td>
+		</tr>
+	</table>
+	<br>
+	<hr>
+
+		<table align=center width=850px>
+			<tr>
+				<td width=260px>
+					<center>
+						<img class="round" style="width:850px" src="./resources/arch3.png"/>
+					</center>
+				</td>
+			</tr>
+		</table>
+	</center>
+
+	
+
+    <table align=center width=850px>
+		<center><h1>Method</h1></center>
+		<tr>
+			<td align="justify">
+                Training pipeline. The stable diffusion part is responsible for learning the distribution of thermal images. The conditioning part provides the visible image to enforce structural similarity as well as guidance from the foundation model and text instructions for improved translation. Only the Denoising UNet and the Projector module are trainable in the pipeline.
+			</td>
+		</tr>
+	</table>
+	<br>
+	<hr>
+
+    <table align=center width=850px>
+		<center><h1>Results</h1></center>
+		<tr>
+			<td width=260px>
+                <center>
+                    <img class="round" style="width:850px" src="./resources/qualitative.png"/>
+                </center>
+            </td>
+		</tr>
+        <tr>
+			<td align="justify">
+                Qualitative Results over datasets from three different wavelength spectra. Our method (third column) is able to generate images more similar to the ground truth as compared to existing methods (fourth, fifth and sixth columns).
+			</td>
+		</tr>
+	</table>
+	<br>
+	<hr>
+
+    <table align=center width=850px>
+		<center><h1>Multi Spectra Translation Results</h1></center>
+		<tr>
+			<td width=260px>
+                <center>
+                    <img class="round" style="width:850px" src="./resources/allmodal_translations.png"/>
+                </center>
+            </td>
+		</tr>
+        <tr>
+			<td align="justify">
+                Text prompted translation capability of F-ViTA. Our method is able to generate LWIR, MWIR or NIR images based on the text instruction. The second column shows the ground truth which is from the wavelength range specified next to the dataset name on the right.
+			</td>
+		</tr>
+	</table>
+	<br>
+	<hr>
+
+	<table align=center width=850px>
+		<center><h1>Paper and Supplementary Material</h1></center>
+		<tr>
+			<td><a href="TBF"><img class="layered-paper-big" style="height:175px" src="./paper_material/paper.png"/></a></td>
+			<td><span style="font-size:14pt"><br>
+				<b>F-ViTA: Foundation Model Guided Visible to Thermal Translation</b><br>
+				<br>
+				(hosted on <a href="TBF">ArXiv</a>)<br>
+				<!-- (<a href="./resources/camera-ready.pdf">camera ready</a>)<br> -->
+				<span style="font-size:4pt"><a href=""><br></a>
+				</span>
+			</td>
+		</tr>
+	</table>
+	<br>
+
+	<table align=center width=600px>
+		<tr>
+			<td><span style="font-size:14pt"><center>
+				<a href="TBF">[Bibtex]</a>
+			</center></td>
+		</tr>
+	</table>
+
+	<hr>
+	<br>
+
+	<table align=center width=900px>
+		<tr>
+			<td width=400px>
+				<left>
+					<center><h1>Acknowledgements</h1></center>
+					This template was originally made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a> for a <a href="http://richzhang.github.io/colorization/">colorful</a> ECCV project; the code can be found <a href="https://github.com/richzhang/webpage-template">here</a>.
+				</left>
+			</td>
+		</tr>
+	</table>
+
+<br>
+</body>
+</html>
