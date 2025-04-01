@@ -1,4 +1,4 @@
-# Instruction-tuning Stable Diffusion
+# F-ViTA
 Code for the [paper: F-ViTA: Foundation Model Guided Visible to Thermal Translation](tbf)
 
 ## Table of contents
