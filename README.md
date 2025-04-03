@@ -62,8 +62,14 @@ Download these checkpoints and paste them in the Grounded-Segment-Anything folde
 Feel free to use other versions of these foundation models.
 
 ### F-ViTA Checkpoints:
+[KAIST](https://huggingface.co/jay-jnp/F-ViTA_KAIST)
 
-Coming Soon
+[FLIR](https://huggingface.co/jay-jnp/F-VITA_FLIR)
+
+[NIRSCENE](https://huggingface.co/jay-jnp/F-VITA_NIRSCENE)
+
+[OSU](https://huggingface.co/jay-jnp/F-VITA_OSU)
+
 ## Training
 
 ### Dev env setup
@@ -91,7 +97,7 @@ An example is shown in the inference_gsam.sh
 
 ## Acknowledgements
 
-Thanks to the amazing work by [Tim Brooks](https://github.com/timothybrooks/instruct-pix2pix) and [IDEA-Research](https://github.com/IDEA-Research/Grounded-Segment-Anything). Our work is  
+Thanks to the amazing work by [Tim Brooks](https://github.com/timothybrooks/instruct-pix2pix) and [IDEA-Research](https://github.com/IDEA-Research/Grounded-Segment-Anything). Our work is built atop these repositories.
 
 ## Citation
 
