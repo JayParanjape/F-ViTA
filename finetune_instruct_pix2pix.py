@@ -907,7 +907,6 @@ def main():
                 args.dataset_config_name,
                 cache_dir=args.cache_dir
                 # use_auth_token=True,
-                # use_auth_token='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',
             )
     else:
         data_files = {}
