@@ -51,6 +51,10 @@ clone the Grounded SAM folder from IDEA-Research
 ```
 git clone https://github.com/IDEA-Research/Grounded-Segment-Anything.git
 ```
+Install Recognize Anything Model from their official repository
+```
+pip install git+https://github.com/xinyu1205/recognize-anything.git
+```
 Download these checkpoints and paste them in the Grounded-Segment-Anything folder
 
 1) [RAM](https://huggingface.co/spaces/xinyu1205/Recognize_Anything-Tag2Text/blob/main/ram_swin_large_14m.pth)
