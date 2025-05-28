@@ -96,6 +96,13 @@ def get_val_images(dataset_name):
             images.append(os.path.join(root, 'Vis', file_list[i]))
             gts.append(os.path.join(root, 'Ir', file_list[i]))
             names.append(file_list[i])
+    else:
+        print("Assuming data directory path in dataset_name")
+        file_list = os.listdir(dataset_name)
+        for i in range(len(file_list)):
+            images.append(os.path.join(dataset_name, file_list[i]))
+            gts.append(os.path.join(dataset_name, file_list[i]))
+            names.append(file_list[i])
 
     print("len images: ", len(images))
     print("len gts: ", len(gts))
